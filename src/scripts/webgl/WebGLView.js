@@ -102,11 +102,14 @@ export default class WebGLView {
         if(window.innerWidth>=1920){this.renderer.setSize(1920, window.innerHeight);}
         else if (window.innerWidth<=1919&&window.innerWidth>1599){this.renderer.setSize(1600,window.innerHeight );}
         else if (window.innerWidth<=1599&&window.innerWidth>1439){this.renderer.setSize(1440,window.innerHeight );}
-        else if (window.innerWidth<=1439&&window.innerWidth>1079){this.renderer.setSize(1080,window.innerHeight );}
-        else if (window.innerWidth<=1079&&window.innerWidth>959){this.renderer.setSize(960,window.innerHeight );}
+        else if (window.innerWidth<=1439&&window.innerWidth>1365){this.renderer.setSize(1366,window.innerHeight );}
+        else if (window.innerWidth<=1365&&window.innerWidth>1279){this.renderer.setSize(1280,window.innerHeight );}
+        else if (window.innerWidth<=1279&&window.innerWidth>1079){this.renderer.setSize(1080,window.innerHeight );}
+        else if (window.innerWidth<=1079&&window.innerWidth>1023){this.renderer.setSize(1024,window.innerHeight );}
+        else if (window.innerWidth<=1023&&window.innerWidth>959){this.renderer.setSize(960,window.innerHeight );}
         else if (window.innerWidth<=959&&window.innerWidth>719){this.renderer.setSize(720, 650);}
-	    else if (window.innerWidth<=719&&window.innerWidth>639){this.renderer.setSize(640, 550);}
-		else if (window.innerWidth<=639&&window.innerWidth>479) {this.renderer.setSize(480, 370);}
+	    else if (window.innerWidth<=719&&window.innerWidth>539){this.renderer.setSize(540, 450);}
+		else if (window.innerWidth<=539&&window.innerWidth>479) {this.renderer.setSize(480, 370);}
         else if (window.innerWidth<=479&&window.innerWidth>0) {this.renderer.setSize(320, 250);}
         else {this.renderer.setSize(window.innerWidth, window.innerHeight)};
 		if (this.interactive) this.interactive.resize();

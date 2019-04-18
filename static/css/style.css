@@ -17,11 +17,16 @@ canvas{
     position: absolute;
     z-index: 1;
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: -webkit-fill-available;
+}
 .error_content
 {
     position: relative;
     width:100%;
-    padding-top: 340px;
 }
 .but {
     position: relative;
@@ -61,12 +66,6 @@ canvas{
     .container{
         margin-top: 15px;
     }
-    canvas{
-        opacity: 0.6;
-    }
-    .error_content{
-        padding-top: 690px;
-    }
     .error_page h1
     {
         font-size: 40pt;
@@ -74,20 +73,13 @@ canvas{
 }
 @media screen and (max-width: 719px){
     .error_content{
-        padding-top: 585px;
+        padding-top: 100px;
     }
 }
-@media screen and (max-width: 639px){
-    .error_content{
-        padding-top: 475px;
-    }
-    canvas{
-        opacity: 0.7;
-    }
-}
+
 @media screen and (max-width: 479px){
     .error_content{
-        padding-top: 360px;}
+        padding-top: 170px;}
     .error_page h1
     {
         font-size: 30pt;
